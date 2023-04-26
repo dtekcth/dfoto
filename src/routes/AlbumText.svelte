@@ -4,10 +4,10 @@
 	export let gallery: Album;
 </script>
 
-<div class="wrapper flow">
+<div class="overflow-hidden break-words">
 	<div class="flex flex-wrap gap-x-4 align-baseline break-words">
 		<h3 class="break-words">
-			<a href="/gallery/{gallery._id}">
+			<a href="/gallery/{gallery._id}" class="text-black">
 				{gallery.name}
 			</a>
 		</h3>
@@ -17,12 +17,6 @@
 </div>
 
 <style>
-	.wrapper {
-		overflow: hidden;
-		overflow-wrap: break-word;
-		--flow-space: var(--s0);
-	}
-
 	a {
 		color: black;
 	}
