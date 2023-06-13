@@ -5,13 +5,13 @@
 </script>
 
 <div>
-	<img
-		class="rounded-lg w-full"
-		src="/v1/gallery/{gallery._id}/thumbnail-preview"
-		alt=""
-		loading="lazy"
-	/>
 	<a href="/gallery/{gallery._id}" class="text-black">
+		<img
+			class="rounded-lg w-full"
+			src="/v1/gallery/{gallery._id}/thumbnail-preview"
+			alt=""
+			loading="lazy"
+		/>
 		<h4 class="m-block-2">{gallery.name}</h4>
 	</a>
 </div>

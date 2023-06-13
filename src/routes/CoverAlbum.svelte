@@ -1,4 +1,5 @@
 <script lang="ts">
+	import Tag from '$lib/components/Tag.svelte';
 	import type { Album } from '$lib/types';
 	import AlbumText from './AlbumText.svelte';
 
@@ -15,9 +16,7 @@
 					{gallery.name}
 				</a>
 			</h3>
-			<span class="bg-orange-300 text-orange-900 p-block-1 p-inline-3 rounded-full m-block-auto"
-				>Latest</span
-			>
+			<Tag>Latest</Tag>
 		</div>
 		<p class="line-clamp-3">{gallery.description}</p>
 	</div>
